@@ -1,9 +1,11 @@
-div {
+.noon {
   height: 100vh;
   background: rgb(0, 21, 49);
   position: relative;
   overflow: hidden ;
-  animation: sky 10s linear forwards 9s;
+  font-size: 13px;
+  margin: auto;
+   animation: sky 7s linear forwards 7s;
 }
 
 @keyframes sky {
@@ -25,4 +27,33 @@ div {
   100% {
     background: rgb(75, 153, 255);
   }
+}
+
+
+.noon::after{
+position: absolute;
+content: '';
+width: 100px;
+height: 100px;
+border-radius: 50%;
+top: 0;
+left: 80%;
+transform: translate(35%,-100%);
+background: #fcfcfc;
+box-shadow: 0 0 30px #d3e6ff;
+z-index: 1;
+animation: moon 13s linear forwards 1s;
+}
+
+
+
+@keyframes moon{
+
+ 100%{
+    left: 0;
+    top: 100%;
+ }
+
+
+
 }
