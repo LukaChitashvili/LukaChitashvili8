@@ -5,7 +5,7 @@
   overflow: hidden ;
   font-size: 13px;
   margin: auto;
-   animation: sky 7s linear forwards 7s;
+   animation: sky 10s linear forwards 9s;
 }
 
 @keyframes sky {
@@ -37,12 +37,12 @@ width: 100px;
 height: 100px;
 border-radius: 50%;
 top: 0;
-left: 80%;
+left: 75%;
 transform: translate(35%,-100%);
 background: #fcfcfc;
-box-shadow: 0 0 30px #d3e6ff;
+box-shadow: 0 0 35px #d3e6ff;
 z-index: 1;
-animation: moon 13s linear forwards 1s;
+animation: moon 13s linear forwards ;
 }
 
 
@@ -57,3 +57,50 @@ animation: moon 13s linear forwards 1s;
 
 
 }
+
+.noon::before{
+position: absolute;
+content: '';
+width: 150px;
+height: 150px;
+border-radius: 50%;
+left: 85%;
+top: 100%;
+background: rgb(255, 244, 206, );
+box-shadow: 0 0 45px wheat;
+animation:  sun 12s linear forwards 12s;
+}
+
+@keyframes sun {
+  0% {
+    background: tomato;
+    box-shadow: 0 0 40 rgb(255, 204, 51);
+  }
+  20% {
+    background: rgb(209, 64, 9,);
+
+  }
+  30% {
+     background: rgb(209, 64, 9,);
+    box-shadow: 0 0 10px rgb(255, 160,184);
+  }
+  50% {
+    background: rgb(252, 180, 30);
+    box-shadow:  0 0 40 wheat;
+  }
+  60% {
+        background: rgb(255, 204, 51);
+    box-shadow:  0 0 40 wheat;
+  }
+    80% {
+     background: rgb(255, 228, 132);
+    box-shadow:  0 0 40 wheat, 0 0 60px wheat;
+  }
+    100% {
+        left: 35%;
+        top: -40%;
+    
+  }
+
+}
+
