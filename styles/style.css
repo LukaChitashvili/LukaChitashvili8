@@ -1,0 +1,28 @@
+div {
+  height: 100vh;
+  background: rgb(0, 21, 49);
+  position: relative;
+  overflow: hidden ;
+  animation: sky 10s linear forwards 9s;
+}
+
+@keyframes sky {
+  0% {
+    background: rgb(0, 21, 49);
+  }
+  20% {
+    background: rgb(1, 31, 70);
+  }
+  40% {
+    background: rgb(3, 52, 116);
+  }
+  60% {
+    background: rgb(11, 81, 172);
+  }
+  80% {
+    background: rgb(34, 111, 212);
+  }
+  100% {
+    background: rgb(75, 153, 255);
+  }
+}
