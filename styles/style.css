@@ -1,11 +1,11 @@
 .noon {
-  height: 100vh;
-  background: rgb(0, 21, 49);
-  position: relative;
-  overflow: hidden ;
-  font-size: 13px;
-  margin: auto;
-   animation: sky 10s linear forwards 9s;
+      height: 100vh;
+      background: rgb(0, 21, 49);
+      position: relative;
+      overflow: hidden ;
+      font-size: 13px;
+      margin: auto;
+      animation: sky 10s linear forwards 9s;
 }
 
 @keyframes sky {
@@ -31,18 +31,18 @@
 
 
 .noon::after{
-position: absolute;
-content: '';
-width: 100px;
-height: 100px;
-border-radius: 50%;
-top: 0;
-left: 75%;
-transform: translate(35%,-100%);
-background: #fcfcfc;
-box-shadow: 0 0 35px #d3e6ff;
-z-index: 1;
-animation: moon 13s linear forwards ;
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 0;
+    left: 75%;
+    transform: translate(35%,-100%);
+    background: #fcfcfc;
+    box-shadow: 0 0 35px #d3e6ff;
+    z-index: 1;
+    animation: moon 13s linear forwards ;
 }
 
 
@@ -59,16 +59,16 @@ animation: moon 13s linear forwards ;
 }
 
 .noon::before{
-position: absolute;
-content: '';
-width: 150px;
-height: 150px;
-border-radius: 50%;
-left: 85%;
-top: 100%;
-background: rgb(255, 244, 206, );
-box-shadow: 0 0 45px wheat;
-animation:  sun 12s linear forwards 12s;
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 85%;
+    top: 100%;
+    background: rgb(255, 244, 206, );
+    box-shadow: 0 0 45px wheat;
+    animation:  sun 12s linear forwards 10s;
 }
 
 @keyframes sun {
@@ -82,7 +82,7 @@ animation:  sun 12s linear forwards 12s;
   }
   30% {
      background: rgb(209, 64, 9,);
-    box-shadow: 0 0 10px rgb(255, 160,184);
+     box-shadow: 0 0 10px rgb(255, 160,184);
   }
   50% {
     background: rgb(252, 180, 30);
@@ -90,11 +90,11 @@ animation:  sun 12s linear forwards 12s;
   }
   60% {
         background: rgb(255, 204, 51);
-    box-shadow:  0 0 40 wheat;
+        box-shadow:  0 0 40 wheat;
   }
     80% {
      background: rgb(255, 228, 132);
-    box-shadow:  0 0 40 wheat, 0 0 60px wheat;
+     box-shadow:  0 0 40 wheat, 0 0 60px wheat;
   }
     100% {
         left: 35%;
@@ -103,4 +103,105 @@ animation:  sun 12s linear forwards 12s;
   }
 
 }
+
+.invi{
+top: 0;
+position: absolute;
+width: 100%;
+height: 100%;
+background: url(images/stars.png);
+background-position: right;
+background-repeat: no-repeat;
+background-size: cover;
+animation: black 13s linear forwards;   
+}
+
+@keyframes black {
+    20%{
+        opacity: 1 ;
+
+    }
+    40%{
+        opacity: .9 ;
+
+    }
+    60%{
+        opacity: .7 ;
+
+    }
+    80%{
+        opacity: .5 ;
+
+    }
+    100%{
+        opacity: 0 ;
+
+    }
+
+}
+
+
+.low{
+    
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 95vh;
+    background-image: url(images/forest1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+  background-size: cover;
+    z-index: 99 ;
+     animation: blacks 12s ; 
+}   
+
+@keyframes blacks{
+
+0%{
+ filter:brightness(10%) ;
+
+}
+10%{
+ filter:brightness(20%) ;
+
+}
+
+ 20%{
+    filter:brightness(30%) ;
+
+    }
+    30%{
+        filter:brightness(40%) ;
+    }
+
+50%{
+        filter:brightness(50%) ;
+
+
+    }
+
+70%{
+        filter:brightness(65%) ;
+
+    }
+
+80%{
+        filter:brightness(75%) ;
+
+    }
+
+
+  90%{
+        filter:brightness(85%) ;
+
+    }
+
+    100%{
+        filter:brightness(95%) ;
+
+    }
+
+}
+
 
